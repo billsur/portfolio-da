@@ -13,11 +13,11 @@
 
 .btn {
   transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 5px 5px 31px -10px #06fbce;
+  box-shadow: 5px 5px 31px -10px var(--btn-accent);
 }
 
 .btn:hover::before {
   top: 0;
   left: 0;
-  border-color: #06fbce;
+  border-color: var(--btn-accent);
 }

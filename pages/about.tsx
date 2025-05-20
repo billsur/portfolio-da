@@ -10,17 +10,32 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
-    "Html/css",
-    "javascript",
-    "typescript",
-    "reactjs",
-    "nextjs",
-    "gatsbyjs",
-    "redux",
-    "firebase",
-    "tailwindcss",
-    "bootstrap",
-    "figma",
+    "Html/CSS",
+    "Javascript",
+    "Typescript",
+    "React.js",
+    "Vue.Js",
+    "JQuery",
+    "Nuxt.js",
+    "Lit",
+    "Stencil.js",
+    "Vuex",
+    "Pinia",
+    "SCSS",
+    "Tailwindcss",
+    "Bootstrap",
+    "Vuetify",
+    "Jest",
+    "Vitest",
+    "RESTful API",
+    "Axios",
+    "Ajax",
+    "Figma",
+    "Zeplin",
+    "JIRA",
+    "Microsoft Azure",
+    "Bitbucket",
+    "Git/Gitlab"
   ];
   return (
     <>
@@ -44,7 +59,7 @@ const About = () => {
                 initial={{ width: 0 }}
                 animate={{ width: "4rem" }}
                 transition={{ duration: 0.5, delay: 1 }}
-                className="absolute bottom-full w-16 h-4 bg-primary"
+                className="absolute bottom-full w-16 h-4 bg-primary dark:bg-primary-dark"
               ></motion.span>
             </motion.span>
             Me
@@ -57,18 +72,10 @@ const About = () => {
               custom={0.3}
               className="text-main font-semibold text-lg leading-relaxed text-gray-800 dark:text-gray-200 mb-6"
             >
-              Hi I'm Billy , I'm a self taught front-end web developer and
-              designer with over 2 years of experience on building web
-              application. I like learning new technologies, continue
-              challenging myself, and do interesting things that matter.
-              <br />
-              <br />
-              My main experience is in front-end development but I also have a
-              passion for design. Given that producing a modern website requires
-              the combination of design, server technology, and the layer that
-              users interacts with, I believe having experience in both design
-              and development allows for making the most optimal user
-              experiences.
+              Hi I'm Billy, motivated and results-driven Front End Engineer with a strong focus on Vue.js and a background in Business. 
+              Experienced in building dynamic, scalable, and user-friendly web applications. Adept at bridging the gap between technical 
+              implementation and business needs, leveraging design thinking and data-driven insights to improve user experience and drive 
+              project success. 
             </motion.p>
             <motion.h3
               initial="hidden"

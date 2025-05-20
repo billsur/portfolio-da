@@ -61,7 +61,7 @@ const Home = () => {
                 variants={slideUp}
                 whileTap={{ scale: 0.9 }}
                 custom={0.6}
-                className={`${styles.btn} focus:outline-none mt-8 place-self-start relative self-start align-start px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary`}
+                className={`${styles.btn} focus:outline-none mt-8 place-self-start relative self-start align-start px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary dark:bg-primary-dark`}
               >
                 <a>view work</a>
               </motion.button>

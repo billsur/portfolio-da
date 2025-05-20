@@ -14,13 +14,14 @@ module.exports = {
             },
 
             colors: {
-                primary: "#2CC295",
+                primary: "#2b7efe",
+                'primary-dark': "#2CC295",
                 'dark-theme': "#1B1F22",
                 'dark-gray': "#313538"
             },
             gridTemplateColumns: {
                 'auto-1': ' repeat(1, minmax(0, auto))',
-               'auto-2': ' repeat(2, minmax(0, auto))',
+                'auto-2': ' repeat(2, minmax(0, auto))',
               }
         },
     },

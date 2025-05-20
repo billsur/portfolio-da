@@ -16,7 +16,7 @@ const Heading = ({ heading, stroke = false }) => {
           initial={{ width: 0 }}
           animate={{ width: "4rem" }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="absolute bottom-full w-16 h-4 bg-primary"
+          className="absolute bottom-full w-16 h-4 bg-primary dark:bg-primary-dark"
         ></motion.span>
       </motion.span>
       <motion.span

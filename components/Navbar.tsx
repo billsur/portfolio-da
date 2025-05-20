@@ -66,7 +66,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
-            color={`${isDarkTheme ? "#06fbce" : "#000"}`}
+            color={`${isDarkTheme ? "#2b7efe" : "#000"}`}
           />
         </div>
         <ul
@@ -89,10 +89,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
         </ul>
 
         <div className="md:block hidden">
-          <div className="absolute w-16 h-16 bg-primary right-0 top-0">
-            <div className="absolute top-4 -left-4 w-16 bg-cover h-16">
-              <Shape />
-            </div>
+          <div className="absolute w-16 h-16 bg-primary dark:bg-primary-dark right-0 top-0">
           </div>
         </div>
       </nav>

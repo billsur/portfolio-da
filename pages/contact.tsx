@@ -135,7 +135,7 @@ const Contact = () => {
               <motion.div variants={itemSlideUp} className="text-center">
                 <button
                   type="submit"
-                  className="rounded bg-primary text-black font-main font-bold px-4 py-1 place-self-center"
+                  className="rounded bg-primary dark:bg-primary-dark text-black font-main font-bold px-4 py-1 place-self-center"
                 >
                   Submit
                 </button>

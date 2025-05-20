@@ -71,10 +71,10 @@
 
   20% {
     transform: scale(1);
-    color: #06fbce;
-    -webkit-text-stroke: 3px #06fbce;
+    color: var(--btn-accent);
+    -webkit-text-stroke: 3px var(--btn-accent);
     filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
-      drop-shadow(0 0 3px #06fbce) drop-shadow(0 0 5px #06fbce);
+      drop-shadow(0 0 3px var(--btn-accent)) drop-shadow(0 0 5px var(--btn-accent));
   }
 
   50% {
