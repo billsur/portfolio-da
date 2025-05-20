@@ -9,16 +9,16 @@ export default async function contact (req, res) {
         port: 465,
         secure: true,
         auth: {
-            user: process.env.user,
-            pass: process.env.pass
+            user: process.env.NEXT_USER_EMAIL,
+            pass: process.env.NEXT_USER_PASS
         }
     });
 
     try {
         await transporter.sendMail({
           from: email,
-          to: 'devzinochan@gmail.com',
-          subject: `Contact form submission from ${email}`,
+          to: 'billsssp@gmail.com',
+          subject: `[Portofolio] Contact form submission from ${email}`,
           html: `<p>You have a new contact form submission</p><br>
           <p><strong>Name: </strong> ${name} </p><br>
           <p><strong>Message: </strong> ${msg} </p><br>

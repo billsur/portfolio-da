@@ -1,6 +1,6 @@
 import Heading from "@components/Heading";
 import {
-  faFacebookF,
+  faLinkedin,
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
@@ -161,7 +161,7 @@ const Contact = () => {
                 >
                   <FontAwesomeIcon className="w-4" icon={faEnvelope} />
                   <span className="text-lg font-main">
-                    devzinochan@gmail.com
+                    billsssp@gmail.com
                   </span>
                 </motion.div>
                 <motion.div
@@ -169,14 +169,14 @@ const Contact = () => {
                   className="flex mb-4 items-center space-x-4 text-gray-700 dark:text-gray-300"
                 >
                   <FontAwesomeIcon className="w-4" icon={faPhone} />
-                  <span className="text-lg font-main">+212 629872534</span>
+                  <span className="text-lg font-main">+62 818 1818 4624</span>
                 </motion.div>
                 <motion.div
                   variants={item}
                   className="flex mb-4 items-center space-x-4 text-gray-700 dark:text-gray-300"
                 >
                   <FontAwesomeIcon className="w-4" icon={faMapMarkerAlt} />
-                  <span className="text-lg font-main">Benslimane, Morocco</span>
+                  <span className="text-lg font-main">Jakarta, Indonesia</span>
                 </motion.div>
               </motion.div>
               <motion.div initial="hidden" animate="visible" variants={list}>
@@ -197,16 +197,16 @@ const Contact = () => {
                     className="hover:text-primary dark:text-primary"
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/shuu.chan.771"
+                    href="https://www.linkedin.com/in/billy-surya-putra/"
                   >
-                    <FontAwesomeIcon className="w-4 h-4" icon={faFacebookF} />
+                    <FontAwesomeIcon className="w-4 h-4" icon={faLinkedin} />
                   </motion.a>
                   <motion.a
                     variants={itemSlideUp}
                     className="hover:text-primary dark:text-primary"
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://www.instagram.com/shuu.chan.25/"
+                    href="https://www.instagram.com/billsssp/"
                   >
                     <FontAwesomeIcon className="w-4" icon={faInstagram} />
                   </motion.a>
@@ -215,7 +215,7 @@ const Contact = () => {
                     className="hover:text-primary dark:text-primary"
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://github.com/ZinoChan"
+                    href="https://github.com/billsur"
                   >
                     <FontAwesomeIcon className="w-4 h-4" icon={faGithub} />
                   </motion.a>
