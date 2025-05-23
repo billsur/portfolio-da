@@ -2,7 +2,7 @@ import Heading from "../../components/Heading";
 import { projects } from "@data/projects";
 import { useRouter } from "next/router";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slide from "@components/Slide";
 import { motion } from "framer-motion";
@@ -21,8 +21,18 @@ const ProjectDetails = () => {
       {!project && <NotFound />}
       {project && (
         <section className="min-h-screen py-32 flex items-center overflow-hidden dark:bg-dark-theme">
-          <div className="max-w-screen-lg mx-auto w-full px-2 ">
-            <div className="lg:flex lg:justify-center lg:space-x-12 mb-12">
+          <div className="max-w-screen-lg mx-auto w-full px-2">
+            <motion.div
+              initial="hidden" 
+              animate="visible"
+              className="text-gray-500 dark:text-gray-100 flex items-center gap-5"
+            >
+              <div onClick={() => history.back()} className="cursor-pointer">
+                <FontAwesomeIcon className="text-4xl" icon={faArrowLeft} />
+              </div>
+              <div className="border-t-4 mb-0.5 flex-grow border-gray-500 dark:border-gray-100"></div>
+            </motion.div>
+            <div className="lg:flex lg:justify-center lg:space-x-12 mb-12 mt-8">
               <Heading heading={project?.name} stroke />
 
               <motion.div initial="hidden" animate="visible" variants={list}>
@@ -50,7 +60,8 @@ const ProjectDetails = () => {
                       key={`${tool}-${index}`}
                       className=" mr-2 text-lg text-gray-700 dark:text-gray-200 font-main font-medium"
                     >
-                      {tool},
+                      {tool}
+                      {index < project.tools.length - 1 && ','}
                     </span>
                   ))}
                 </motion.div>

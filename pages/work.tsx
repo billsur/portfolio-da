@@ -16,7 +16,6 @@ const Work = () => {
       <section className="dark:bg-dark-theme relative overflow-hidden min-h-screen flex items-center py-28">
         <div className="max-w-screen-lg mx-auto w-full px-2">
           <Heading heading="work" />
-
           <motion.div
             initial="hidden"
             animate="visible"

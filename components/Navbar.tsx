@@ -37,7 +37,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
         
         </div>
 
-        <ul className="md:flex hidden space-x-6 items-center text-xl font-main capitalize">
+        <ul className="md:flex hidden space-x-6 items-center text-xl font-main capitalize ">
           {routes.map((route, index) => (
             <li key={`${route.name}-${index}`} className="dark:text-gray-100">
               <Link href={route.link}>
@@ -54,7 +54,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
             <FontAwesomeIcon icon={isDarkTheme ? faSun : faMoon} />
           </button>
         </ul>
-        <div className="flex items-center md:hidden relative z-40 self-center ">
+        <div className="flex items-center md:hidden relative z-40 self-center justify-center">
           <button
             className={`focus:outline-none w-5 h-5 mr-2 ${
               isDarkTheme ? "text-white" : "text-black"
