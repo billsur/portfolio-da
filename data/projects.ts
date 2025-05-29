@@ -44,6 +44,28 @@ export const projects = [
     imgs: ["/work/lit-1.png"]
   },
   {
+    id: "9f4d390d-1291-4523-8875-12356asdhjfa",
+    category: "Nuxt.js 2, Tailwindcss, Vuex, Vuetify, Microsoft Auth Lib",
+    name: "CMS Event Kompas",
+    img: "/work/cms-1.png",
+    linkToPage: "https://dasbor-event.kompas.id/login",
+    linkToSrc: "",
+    description: "Kompas Event CMS Apps",
+    tools: ["Nuxt 2", "Vuex", "Vuetify", "Tailwindcss", "Microsoft Auth Lib"],
+    imgs: ["/work/cms-1.png", "/work/cms-2.png", "/work/cms-6.png", "/work/cms-7.png", "/work/cms-8.png", "/work/cms-9.png","/work/cms-10.png", "/work/cms-11.png", "/work/cms-12.png"]
+  },
+  {
+    id: "9f4d390d-1291-4523-8875-657ad56jf91w",
+    category: "Nuxt.js 3, Tailwindcss, Pinia, Vitest",
+    name: "Kompas.id User Profile Page",
+    img: "/work/mng-1.png",
+    linkToPage: "https://dasbor-event.kompas.id/login",
+    linkToSrc: "",
+    description: "Kompas.id User Profile Page",
+    tools: ["Nuxt 3", "Pinia", "Vuetify", "Tailwindcss", "Vitest"],
+    imgs: ["/work/mng-1.png", "/work/mng-2.png", "/work/mng-3.png", "/work/mng-4.png", "/work/mng-5.png", "/work/mng-6.png", "/work/mng-7.png", "/work/mng-8.png", "/work/mng-9.png", "/work/mng-10.png", "/work/mng-11.png"]
+  },
+  {
     id: "e6b700d5-1110-4de3-8d4f-102aa947437d",
     category: "Vue.js, Laravel, PHP, SCSS, Stylus",
     name: "Jakmall",

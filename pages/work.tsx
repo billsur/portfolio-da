@@ -51,13 +51,15 @@ const Work = () => {
                         icon={faExternalLinkAlt}
                       />
                     </a>
-                    <a
-                      href={linkToSrc}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <FontAwesomeIcon className="w-4" icon={faGithub} />
-                    </a>
+                    { 
+                      linkToSrc && <a
+                        href={linkToSrc}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon className="w-4" icon={faGithub} />
+                      </a>
+                    }
                   </div>
                 </div>
               </motion.div>

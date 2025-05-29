@@ -22,16 +22,6 @@ const ProjectDetails = () => {
       {project && (
         <section className="min-h-screen py-32 flex items-center overflow-hidden dark:bg-dark-theme">
           <div className="max-w-screen-lg mx-auto w-full px-2">
-            <motion.div
-              initial="hidden" 
-              animate="visible"
-              className="text-gray-500 dark:text-gray-100 flex items-center gap-5"
-            >
-              <div onClick={() => history.back()} className="cursor-pointer">
-                <FontAwesomeIcon className="text-4xl" icon={faArrowLeft} />
-              </div>
-              <div className="border-t-4 mb-0.5 flex-grow border-gray-500 dark:border-gray-100"></div>
-            </motion.div>
             <div className="lg:flex lg:justify-center lg:space-x-12 mb-12 mt-8">
               <Heading heading={project?.name} stroke />
 
@@ -78,15 +68,18 @@ const ProjectDetails = () => {
                     <span>Visit App</span>
                     <FontAwesomeIcon className="w-4" icon={faExternalLinkAlt} />
                   </a>
-                  <a
-                    href={project?.linkToSrc}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="mr-4 hover:text-primary flex  items-center  space-x-2"
-                  >
-                    <span>View Source</span>
-                    <FontAwesomeIcon className="w-4" icon={faGithub} />
-                  </a>
+                  { 
+                    project?.linkToSrc && 
+                    <a
+                      href={project?.linkToSrc}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="mr-4 hover:text-primary flex  items-center  space-x-2"
+                    >
+                      <span>View Source</span>
+                      <FontAwesomeIcon className="w-4" icon={faGithub} />
+                    </a>
+                  }
                 </motion.div>
               </motion.div>
             </div>
