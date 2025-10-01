@@ -10,21 +10,44 @@ import {
 import Link from "next/link";
 import MetaTags from "@components/MetaTags";
 import Shape from "@components/Shape";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 const Home = () => {
+  const typedRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (typedRef.current) {
+      const typed = new Typed(typedRef.current, {
+        strings: ["Data Analyst", "Front-End Engineer"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+
+      return () => {
+        typed.destroy();
+      };
+    }
+  }, []);
+
   return (
     <>
-      <MetaTags title="Billy  | Front-end developer" />
+      <MetaTags title="Billy  | Data Analyst" />
       <section className="relative overflow-hidden min-h-screen w-full flex items-center md:pt-0 pt-16 dark:bg-dark-theme">
         <motion.h1
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           custom={0.6}
-          className="absolute z-20 bottom-0 px-2 xl:hidden font-main uppercase font-black text-gray-300 dark:text-dark-gray   md:text-7xl text-5xl"
+          className="absolute z-20 bottom-0 px-2 xl:hidden font-main uppercase font-black text-gray-300 dark:text-dark-gray md:text-7xl text-5xl"
         >
-          front-end
+          data analyst
         </motion.h1>
+
         <div className="relative max-w-screen-lg px-2 w-full mx-auto">
           <div className="md:grid md:grid-cols-auto-2 md:grid-rows-auto-2 xl:gap-0 gap-4">
             <motion.h1
@@ -32,28 +55,30 @@ const Home = () => {
               animate="visible"
               variants={slideToLeft}
               custom={0.3}
-              className="md:text-7xl text-4xl md:leading-normal dark:text-gray-100  font-black font-main text-black uppercase"
+              className="md:text-7xl text-4xl md:leading-normal dark:text-gray-100 font-black font-main text-black uppercase flex items-center"
             >
-              Front-End <br /> developer
+              <span ref={typedRef}></span>
             </motion.h1>
+
             <div className="md:space-x-16 justify-center items-center md:flex">
               <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={slideDown}
-                className="md:w-0.5  md:h-52 h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
+                className="md:w-0.5 md:h-52 h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
               ></motion.div>
               <motion.p
                 initial="hidden"
                 animate="visible"
                 variants={slideToRight}
                 custom={0.3}
-                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700   font-lora  capitalize"
+                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora capitalize"
               >
-                Front-end <br />
+                Data Analyst <br />
                 based in Indonesia.
               </motion.p>
             </div>
+
             <Link href="/work">
               <motion.button
                 initial="hidden"
@@ -68,12 +93,13 @@ const Home = () => {
             </Link>
           </div>
         </div>
+
         <motion.div
           initial="hidden"
           animate="visible"
           variants={slideUp}
           custom={0.6}
-          className="absolute -bottom-10 xl:left-12 right-0 w-20 bg-cover h-20 dark:filter  dark:invert"
+          className="absolute -bottom-10 xl:left-12 right-0 w-20 bg-cover h-20 dark:filter dark:invert"
         >
           <Shape />
         </motion.div>
