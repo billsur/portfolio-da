@@ -12,14 +12,12 @@ import {
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "./Logo";
-import Shape from "./Shape";
 
 const Navbar = ({ setDarkTheme, isDarkTheme }) => {
   const routes = [
     { link: "/", name: "home", icon: faHome },
-    { link: "/work", name: "work", icon: faCode },
     { link: "/about", name: "about", icon: faAddressCard },
+    { link: "/work", name: "work", icon: faCode },
     { link: "/contact", name: "contact", icon: faEnvelope },
   ];
 
@@ -56,7 +54,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
         </ul>
         <div className="flex items-center md:hidden relative z-40 self-center justify-center">
           <button
-            className={`focus:outline-none w-5 h-5 mr-2 ${
+            className={`focus:outline-none w-5 h-5 mr-6 ${
               isDarkTheme ? "text-white" : "text-black"
             }`}
             onClick={() => setDarkTheme(!isDarkTheme)}

@@ -25,19 +25,7 @@ const ProjectDetails = () => {
             <div className="lg:flex lg:justify-center lg:space-x-12 mb-12 mt-8">
               <Heading heading={project?.name} stroke />
 
-              <motion.div initial="hidden" animate="visible" variants={list}>
-                <motion.h4
-                  variants={item}
-                  className="mb-2 text-xl text-gray-900 dark:text-gray-300 font-main font-semibold"
-                >
-                  Description:
-                </motion.h4>
-                <motion.p
-                  variants={item}
-                  className="mb-6 text-lg text-gray-700 dark:text-gray-200 font-main font-medium"
-                >
-                  {project?.description}
-                </motion.p>
+              <motion.div initial="hidden" animate="visible" variants={list} className="mt-20">
                 <motion.h4
                   variants={item}
                   className="mb-2 text-xl text-gray-900 dark:text-gray-300  font-main font-semibold"
@@ -48,10 +36,10 @@ const ProjectDetails = () => {
                   {project?.tools.map((tool, index) => (
                     <span
                       key={`${tool}-${index}`}
-                      className=" mr-2 text-lg text-gray-700 dark:text-gray-200 font-main font-medium"
+                      className="text-lg text-gray-700 dark:text-gray-200 font-main font-medium"
                     >
                       {tool}
-                      {index < project.tools.length - 1 && ','}
+                      {index < project.tools.length - 1 && ', '}
                     </span>
                   ))}
                 </motion.div>
@@ -80,6 +68,42 @@ const ProjectDetails = () => {
                       <FontAwesomeIcon className="w-4" icon={faGithub} />
                     </a>
                   }
+                  { 
+                    project?.linkToSrc && 
+                    <a
+                      href={project?.linkToSrc}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="mr-4 hover:text-primary flex  items-center  space-x-2"
+                    >
+                      <span>View Source</span>
+                      <FontAwesomeIcon className="w-4" icon={faGithub} />
+                    </a>
+                  }
+                  { 
+                    project?.linkToSlide && 
+                    <a
+                      href={project?.linkToSrc}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="mr-4 hover:text-primary flex  items-center  space-x-2"
+                    >
+                      <span>View Slides</span>
+                      <FontAwesomeIcon className="w-4" icon={faGithub} />
+                    </a>
+                  }
+                  { 
+                    project?.linkToDashboard && 
+                    <a
+                      href={project?.linkToSrc}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="mr-4 hover:text-primary flex  items-center  space-x-2"
+                    >
+                      <span>View Dashboard</span>
+                      <FontAwesomeIcon className="w-4" icon={faGithub} />
+                    </a>
+                  }
                 </motion.div>
               </motion.div>
             </div>
@@ -96,6 +120,20 @@ const ProjectDetails = () => {
                   </div>
                 ))}
               </Slide>
+            </motion.div>
+
+            <motion.div initial="hidden" animate="visible" variants={list}>
+              <motion.h4
+                variants={item}
+                className="mb-2 text-xl text-gray-900 dark:text-gray-300 font-main font-semibold"
+              >
+                Description:
+              </motion.h4>
+              <motion.div
+                variants={item}
+                className="mb-6 text-lg text-gray-700 dark:text-gray-200 font-main font-medium prose dark:prose-invert"
+                dangerouslySetInnerHTML={{ __html: project?.description || "" }}
+              />
             </motion.div>
           </div>
         </section>

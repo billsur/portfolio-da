@@ -6,7 +6,13 @@ export const projects = [
     img: "/work/auth-1.png",
     linkToPage: "https://auth.kompas.id/login",
     linkToSrc: "",
-    description: "Authentication Page on Kompas.id",
+    description: `
+        <p>This is my <strong>portfolio project</strong>.</p>
+        <ul>
+          <li>Built with Next.js</li>
+          <li>Styled with Tailwind</li>
+        </ul>
+    `,
     tools: ["Nuxt 3", "Pinia", "Vitest", "Tailwindcss", "vue-captcha"],
     imgs: ["/work/auth-1.png", "/work/auth-2.png", "/work/auth-3.png", "/work/auth-4.png"]
   },
@@ -17,6 +23,8 @@ export const projects = [
     img: "/work/checkout-1.png",
     linkToPage: "https://checkoutv2.kompas.id/kdp?productId=9802032",
     linkToSrc: "",
+    linkToSlide: "",
+    linkToDashboard: "",
     description: "Checkout Page on Kompas.id. Project for purchase Subscription on Kompas.id",
     tools: ["Nuxt 2", "Vuex", "Jest", "Tailwindcss"],
     imgs: ["/work/checkout-1.png", "/work/checkout-2.png", "/work/checkout-3.png", "/work/checkout-4.png", "/work/checkout-5.png", "/work/checkout-6.png"]

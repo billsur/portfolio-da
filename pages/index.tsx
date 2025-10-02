@@ -20,12 +20,12 @@ const Home = () => {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
         strings: ["Data Analyst", "Front-End Engineer"],
-        typeSpeed: 70,
+        typeSpeed: 80,
         backSpeed: 50,
-        backDelay: 1500,
+        backDelay: 1800,
         loop: true,
         showCursor: true,
-        cursorChar: "|",
+        cursorChar: "_",
       });
 
       return () => {
@@ -49,7 +49,31 @@ const Home = () => {
         </motion.h1>
 
         <div className="relative max-w-screen-lg px-2 w-full mx-auto">
-          <div className="md:grid md:grid-cols-auto-2 md:grid-rows-auto-2 xl:gap-0 gap-4">
+          <div className="xl:gap-0 gap-4 flex flex-col items-center">
+            <div className="md:space-x-16 justify-center items-center md:flex">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideDown}
+                className="h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
+              ></motion.div>
+              <motion.p
+                initial="hidden"
+                animate="visible"
+                variants={slideToRight}
+                custom={0.3}
+                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora capitalize"
+              >
+                Hello, I'm Billy Surya.
+              </motion.p>
+                <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideDown}
+                className="h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
+              ></motion.div>
+            </div>
+
             <motion.h1
               initial="hidden"
               animate="visible"
@@ -65,7 +89,7 @@ const Home = () => {
                 initial="hidden"
                 animate="visible"
                 variants={slideDown}
-                className="md:w-0.5 md:h-52 h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
+                className="h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
               ></motion.div>
               <motion.p
                 initial="hidden"
@@ -74,21 +98,26 @@ const Home = () => {
                 custom={0.3}
                 className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora capitalize"
               >
-                Data Analyst <br />
-                based in Indonesia.
+                based in Jakarta.
               </motion.p>
+                <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideDown}
+                className="h-0.5 w-52 my-6 bg-gray-300 dark:bg-gray-300"
+              ></motion.div>
             </div>
 
-            <Link href="/work">
+            <Link href="/about">
               <motion.button
                 initial="hidden"
                 animate="visible"
                 variants={slideUp}
                 whileTap={{ scale: 0.9 }}
                 custom={0.6}
-                className={`${styles.btn} focus:outline-none mt-8 place-self-start relative self-start align-start px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary dark:bg-primary-dark`}
+                className={`${styles.btn} focus:outline-none mt-8 relative px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary dark:bg-primary-dark`}
               >
-                <a>view work</a>
+                <a>About Me</a>
               </motion.button>
             </Link>
           </div>
