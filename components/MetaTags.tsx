@@ -8,11 +8,11 @@ const MetaTags = ({ title }) => {
         <meta name="author" content="Billy Surya" />
         <meta
           name="description"
-          content="Front-end React js developer and user interface designer portfolio"
+          content="Data Nalyst and Front-end developer | portfolio"
         />
         <meta
           name="keywords"
-          content="Front-end, web development,Front-end portfolio, web designer, next js portfolio, react js developer"
+          content="Data Analyst, Front-end, web development,Front-end portfolio,  react js developer"
         />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo-favicon.svg" />
       </Head>
