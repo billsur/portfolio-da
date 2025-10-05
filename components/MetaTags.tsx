@@ -8,7 +8,7 @@ const MetaTags = ({ title }) => {
         <meta name="author" content="Billy Surya" />
         <meta
           name="description"
-          content="Data Nalyst and Front-end developer | portfolio"
+          content="Data Analyst and Front-end Developer | Portfolio"
         />
         <meta
           name="keywords"
