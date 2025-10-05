@@ -96,9 +96,9 @@ const Home = () => {
                 animate="visible"
                 variants={slideToRight}
                 custom={0.3}
-                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora capitalize"
+                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora"
               >
-                based in Jakarta.
+                Based in Jakarta.
               </motion.p>
                 <motion.div
                 initial="hidden"
