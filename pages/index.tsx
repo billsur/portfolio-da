@@ -64,7 +64,7 @@ const Home = () => {
                 custom={0.3}
                 className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora capitalize"
               >
-                Hello, I'm Billy Surya.
+                Hello, I'm <b>Billy Surya</b>.
               </motion.p>
                 <motion.div
                 initial="hidden"

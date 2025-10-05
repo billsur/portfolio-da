@@ -201,7 +201,7 @@ const Contact = () => {
                   >
                     <FontAwesomeIcon className="w-4 h-4" icon={faLinkedin} />
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     variants={itemSlideUp}
                     className="hover:text-primary dark:text-primary"
                     rel="noopener noreferrer"
@@ -209,7 +209,7 @@ const Contact = () => {
                     href="https://www.instagram.com/billsssp/"
                   >
                     <FontAwesomeIcon className="w-4" icon={faInstagram} />
-                  </motion.a>
+                  </motion.a> */}
                   <motion.a
                     variants={itemSlideUp}
                     className="hover:text-primary dark:text-primary"

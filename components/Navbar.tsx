@@ -12,6 +12,7 @@ import {
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "./Logo";
 
 const Navbar = ({ setDarkTheme, isDarkTheme }) => {
   const routes = [
@@ -31,8 +32,8 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
       className="w-full z-20 absolute top-0 left-0 overflow-hidden md:py-6 py-2"
     >
       <nav className="flex px-2 items-center  justify-between w-full max-w-screen-xl mx-auto">
-        <div className="self-center">
-        
+        <div className="h-8 w-8 self-center">
+          <Logo url={isDarkTheme? '/logo-white.svg': '/logo-grey.svg'}/>
         </div>
 
         <ul className="md:flex hidden space-x-6 items-center text-xl font-main capitalize ">

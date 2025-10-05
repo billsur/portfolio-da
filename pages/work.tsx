@@ -31,7 +31,7 @@ const Work = () => {
                       width={345}
                       height={216}
                       layout="responsive"
-                      className="rounded"
+                      className="rounded object-cover"
                       alt="work"
                     />
                   </a>

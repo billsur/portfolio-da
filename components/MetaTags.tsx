@@ -14,7 +14,7 @@ const MetaTags = ({ title }) => {
           name="keywords"
           content="Front-end, web development,Front-end portfolio, web designer, next js portfolio, react js developer"
         />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo-favicon.svg" />
       </Head>
     </>
   );
