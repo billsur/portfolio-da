@@ -161,7 +161,7 @@ const Contact = () => {
                 >
                   <FontAwesomeIcon className="w-4" icon={faEnvelope} />
                   <span className="text-lg font-main">
-                    billsssp@gmail.com
+                    billy.surya31@gmail.com
                   </span>
                 </motion.div>
                 <motion.div
