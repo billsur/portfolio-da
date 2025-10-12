@@ -309,7 +309,7 @@ export const projects = [
             
             <div>
               <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 font-main">Checkout Conversion Lift</h4>
-              <p class="text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">The optimized checkout page, with its streamlined process and targeted promotions, led to a <strong class="font-semibold">substantial reduction in customer churn from 17% to 3.5% over an 8-month period</strong>.</p>
+              <p class="text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">The optimized checkout page, with its streamlined process and targeted promotions, led to a <strong class="font-semibold">substantial reduction in customer churn from 12.95% to 3.5% between April and September 2025.</strong>.</p>
             </div>
             
             <div>
