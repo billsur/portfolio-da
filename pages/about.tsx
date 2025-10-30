@@ -12,11 +12,11 @@ import {
   faPython,
   faJs,
   faHtml5,
-  faReact,
+  // faReact,
   faJira,
   faGoogle,
   faGitAlt,
-  faVuejs,
+  // faVuejs,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -36,11 +36,11 @@ const About = () => {
         { name: "JavaScript", icon: faJs },
         { name: "HTML", icon: faHtml5 }
       ],
-      frameworks: [
-        { name: "React", icon: faReact },
-        { name: "Vue", icon: faVuejs },
-      ],
-      visualization: [
+      // frameworks: [
+      //   { name: "React", icon: faReact },
+      //   { name: "Vue", icon: faVuejs },
+      // ],
+      "data visualization": [
         { name: "Tableau", icon: faChartBar },
       ],
       utilities: [

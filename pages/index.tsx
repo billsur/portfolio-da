@@ -12,6 +12,9 @@ import MetaTags from "@components/MetaTags";
 import Shape from "@components/Shape";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+// import Contact from "./contact";
+// import About from "./about";
+// import Work from "./work";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
@@ -120,6 +123,23 @@ const Home = () => {
                 <a>About Me</a>
               </motion.button>
             </Link>
+
+            <div className="mt-8">
+              <motion.a
+                href="https://drive.google.com/uc?export=download&id=1byQJbvR0ozuMAhtfw1PXPRoGlOf_LugI"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                initial="hidden"
+                animate="visible"
+                variants={slideUp}
+                whileTap={{ scale: 0.9 }}
+                custom={0.8}
+                className={`${styles.btn} mt-4 md:mt-0 focus:outline-none relative px-6 py-2 font-semibold text-md font-main capitalize rounded border border-primary text-primary hover:bg-primary hover:text-white transition-colors dark:border-primary-dark dark:text-primary-dark dark:hover:bg-primary-dark dark:hover:text-white`}
+              >
+                Download CV
+              </motion.a>
+            </div>
           </div>
         </div>
 
@@ -133,6 +153,48 @@ const Home = () => {
           <Shape />
         </motion.div>
       </section>
+      {/* <section className="relative overflow-hidden min-h-screen w-full flex items-center md:pt-0 pt-16 dark:bg-dark-theme">
+        <div className="max-w-screen-lg px-2 w-full mx-auto">
+          <About/>
+        </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={slideUp}
+          custom={0.6}
+          className="absolute -bottom-10 xl:left-12 right-0 w-20 bg-cover h-20 dark:filter dark:invert"
+        >
+          <Shape />
+        </motion.div>
+      </section>
+      <section className="relative overflow-hidden min-h-screen w-full flex items-center md:pt-0 pt-16 dark:bg-dark-theme">
+        <div className="max-w-screen-lg px-2 w-full mx-auto">
+          <Work/>
+        </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={slideUp}
+          custom={0.6}
+          className="absolute -bottom-10 xl:left-12 right-0 w-20 bg-cover h-20 dark:filter dark:invert"
+        >
+          <Shape />
+        </motion.div>
+      </section>
+      <section className="relative overflow-hidden min-h-screen w-full flex items-center md:pt-0 pt-16 dark:bg-dark-theme">
+        <div className="max-w-screen-lg px-2 w-full mx-auto">
+          <Contact/>
+        </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={slideUp}
+          custom={0.6}
+          className="absolute -bottom-10 xl:left-12 right-0 w-20 bg-cover h-20 dark:filter dark:invert"
+        >
+          <Shape />
+        </motion.div>
+      </section> */}
     </>
   );
 };

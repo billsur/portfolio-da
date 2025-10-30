@@ -164,13 +164,13 @@ const Contact = () => {
                     billy.surya31@gmail.com
                   </span>
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                   variants={item}
                   className="flex mb-4 items-center space-x-4 text-gray-700 dark:text-gray-300"
                 >
                   <FontAwesomeIcon className="w-4" icon={faPhone} />
                   <span className="text-lg font-main">+62 818 1818 4624</span>
-                </motion.div>
+                </motion.div> */}
                 <motion.div
                   variants={item}
                   className="flex mb-4 items-center space-x-4 text-gray-700 dark:text-gray-300"
