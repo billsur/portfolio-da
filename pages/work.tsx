@@ -88,7 +88,7 @@ const Work = () => {
           </motion.div>
           <div className="mt-20">
             {/* Projects Section */}
-            <Heading heading="work" />
+            <Heading heading="projects" />
             <motion.div
               initial="hidden"
               animate="visible"
