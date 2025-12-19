@@ -269,6 +269,106 @@ export const projects = [
     imgs: ["/work/revo-steam-1.png", "/work/revo-steam-2.png", "/work/revo-steam-3.png"]
   },
   {
+    "id": "revofin-loan-portfolio-analysis",
+    "category": "SQL, Tableau, Data Analysis, Risk Management, Finance, Credit Analytics",
+    "project_type": "Financial Data Analytics & Risk Management",
+    "name": "RevoFin Loan Portfolio Analysis",
+    "img": "/work/fip-1.png",
+    "linkToPage": "",
+    "linkToSrc": "",
+    "linkToSlide": "https://drive.google.com/file/d/1uXjDSqTrVkWCHaw4_rxM9KX5Rahq0jlG/view?usp=sharing",
+    "linkToDashboard": "",
+    "description": `
+      <div class="space-y-10">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">🏦 Project Overview</h3>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            This project involved a comprehensive risk analysis of a fictional fintech company's $2.8B loan portfolio with a 98.1% repayment rate.
+            Using <strong>SQL for data analysis</strong> and <strong>Tableau for visualization</strong>, the analysis uncovered hidden concentration risks
+            in debt consolidation borrowers and geographic exposure, providing actionable strategies to strengthen underwriting and pricing models.
+          </p>
+          <p class="mt-4 text-sm text-gray-600 dark:text-gray-400 italic">
+            Note: RevoFin is a fictional company created for this analytical case study. All references are for illustrative purposes only.
+          </p>
+        </div>
+
+        <div class="border-t border-gray-900 dark:border-gray-400"></div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">🎯 Project Objectives</h3>
+          <ol class="list-decimal pl-6 space-y-3 text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            <li><strong>Risk Driver Analysis</strong> – Identify borrower traits and loan purposes correlating with higher late payments.</li>
+            <li><strong>Pricing Alignment Review</strong> – Evaluate whether interest rates accurately reflect true borrower risk.</li>
+            <li><strong>Underwriting Enhancement</strong> – Develop evidence-based improvements to the credit assessment process.</li>
+            <li><strong>Concentration Risk Management</strong> – Address geographic overexposure and loan purpose concentration.</li>
+          </ol>
+        </div>
+
+        <div class="border-t border-gray-900 dark:border-gray-400"></div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">📊 Methodology & Key Metrics</h3>
+          <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            <li><strong>Tools:</strong> SQL for data extraction and segmentation, Tableau for visualization and dashboard creation.</li>
+            <li><strong>Key Metric – TKB30:</strong> Segmenting borrowers by repayment performance (30+ days past due).</li>
+            <li><strong>Portfolio Segmentation:</strong> High, Medium, and Low TKB30 segments based on repayment behavior.</li>
+            <li><strong>Analysis Dimensions:</strong> Income levels, home ownership, employment length, loan purpose, geographic distribution, interest rates.</li>
+          </ul>
+        </div>
+
+        <div class="border-t border-gray-900 dark:border-gray-400"></div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">🔍 Key Findings</h3>
+          <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            <li><strong>Debt Consolidation Risk:</strong> Over 60% of high-risk (Low TKB30) loans were for debt consolidation, making it the primary risk driver.</li>
+            <li><strong>Geographic Concentration:</strong> ~39% of the portfolio was concentrated in California, creating systemic risk.</li>
+            <li><strong>Income Insights:</strong> High-risk borrowers were predominantly in the $40k–$60k income bracket, indicating potential financial overextension.</li>
+            <li><strong>Home Ownership:</strong> Mortgage holders represented 52.8% of high-risk borrowers, suggesting existing cash flow strain.</li>
+            <li><strong>Pricing Misalignment:</strong> High-risk borrowers were paying higher interest rates (12–20%), potentially worsening their financial strain.</li>
+            <li><strong>Employment Stability:</strong> Long job tenure (10+ years) did not predict lower risk, indicating even stable careers can become overextended.</li>
+          </ul>
+        </div>
+
+        <div class="border-t border-gray-900 dark:border-gray-400"></div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">💡 Strategic Recommendations</h3>
+          <div class="space-y-6 text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Risk-Based Pricing & Underwriting</h4>
+              <p>Implement pricing models that proactively reflect borrower risk profiles and strengthen underwriting checks for debt consolidation applications, with stricter income and debt-to-income verification.</p>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Portfolio Diversification</h4>
+              <p>Reduce geographic concentration by expanding lending in new states and promote alternative loan purposes (home improvement, medical, major purchases) to decrease reliance on debt consolidation.</p>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Customer-Centric Interventions</h4>
+              <p>Introduce early outreach programs for at-risk borrowers and develop loyalty benefits (lower rates, higher loan amounts) for high-performing customers (High TKB30 segment).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-900 dark:border-gray-400"></div>
+
+        <div class="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900 dark:to-cyan-900 rounded-xl border border-blue-200 dark:border-blue-800">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3 font-main">🎯 Business Impact</h3>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
+            The analysis provided a data-backed roadmap to transform risk management from reactive to predictive. Implementing these strategies would enable RevoFin to:
+            <strong>protect the 98.1% repayment rate</strong>, significantly reduce concentration risk through strategic geographic diversification,
+            improve pricing accuracy by aligning rates with true risk profiles, and build a more resilient portfolio capable of sustainable growth
+            even during regional economic downturns.
+          </p>
+        </div>
+      </div>
+    `,
+    "tools": ["SQL", "Tableau", "Data Analysis", "Risk Management", "Financial Modeling", "Portfolio Analysis", "Credit Risk Assessment", "Data Visualization"],
+    "imgs": ["/work/fip-1.png", "/work/fip-2.png", "/work/fip-3.png"]
+  },
+  {
     id: "kompas-subscription-funnel-optimization",
     category: "Nuxt.js 2, A/B Testing, GTM, Analytics, Conversion Optimization",
     project_type: "Data-Driven Product Optimization",
