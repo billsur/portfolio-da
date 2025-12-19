@@ -280,15 +280,18 @@ export const projects = [
     "linkToDashboard": "",
     "description": `
       <div class="space-y-10">
+        <div class="p-4 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 dark:border-yellow-400 rounded">
+          <p class="text-lg text-gray-800 font-main leading-relaxed">
+            <strong>Note:</strong> This project was part of the RevoU Data Insight Project, a 4-week case study designed to analyze customized datasets and address business challenges. Supervised by RevoU, this project hones analytical skills, strengthens problem-solving abilities, and guides students in delivering actionable insights.
+          </p>
+        </div>
+
         <div>
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-main">🏦 Project Overview</h3>
           <p class="text-lg text-gray-700 dark:text-gray-300 font-main leading-relaxed">
             This project involved a comprehensive risk analysis of a fictional fintech company's $2.8B loan portfolio with a 98.1% repayment rate.
             Using <strong>SQL for data analysis</strong> and <strong>Tableau for visualization</strong>, the analysis uncovered hidden concentration risks
             in debt consolidation borrowers and geographic exposure, providing actionable strategies to strengthen underwriting and pricing models.
-          </p>
-          <p class="mt-4 text-sm text-gray-600 dark:text-gray-400 italic">
-            Note: RevoFin is a fictional company created for this analytical case study. All references are for illustrative purposes only.
           </p>
         </div>
 
